@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Only shows the part of the name after the first dash. 
+
+item=$(ls)
+for i in $item; do
+  echo "$i" | cut -d '-' -f2
+done
