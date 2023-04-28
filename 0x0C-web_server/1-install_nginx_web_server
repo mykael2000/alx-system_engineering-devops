@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 #installation of nginxon my ubuntu server
 
 apt-get -y update
