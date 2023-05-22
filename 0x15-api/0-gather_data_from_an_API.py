@@ -4,7 +4,7 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    link = "https://jsonplaceholder.typicode.com/"
+    link = "https://jsonplaceholder.typicode.com/todos/"
     item = requests.get(link + "users/{}".format(sys.argv[1])).json()
     todos = requests.get(link + "todos", params={"userId": sys.argv[1]}).json()
 
